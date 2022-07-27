@@ -1,0 +1,86 @@
+// register Users
+POST http://localhost:3001/users
+Content-Type: application/json
+
+{
+    "name":"admin",
+    "email":"admin@gmail.com",
+    "password":"123456",
+    "confirmPassword":"123456",
+    "role":"admin"
+}
+
+###
+// get All Users
+GET http://localhost:3001/users
+
+###
+// get Single Users
+GET http://localhost:3001/users/060848b6-d786-40b4-8b76-bd8fe2ca62b9
+
+###
+// update Users
+PATCH http://localhost:3001/users/060848b6-d786-40b4-8b76-bd8fe2ca62b9
+Content-Type: application/json
+
+{
+    "name":"John Tes",
+    "email":"john@gmail.com",
+    "password":"",
+    "confirmPassword":"",
+    "role":"user"
+}
+
+###
+// delete Users
+DELETE http://localhost:3001/users/060848b6-d786-40b4-8b76-bd8fe2ca62b9
+
+###
+// Login
+POST http://localhost:3001/login
+Content-Type: application/json
+
+{
+    "email":"john@gmail.com",
+    "password":"111111"
+}
+
+###
+// get Me
+GET http://localhost:3001/me
+
+###
+// Logout
+DELETE http://localhost:3001/logout
+
+###
+// add product
+POST http://localhost:3001/products
+Content-Type: application/json
+
+{
+    "name":"Pensil 5",
+    "price":123456
+}
+
+###
+// get All Products
+GET http://localhost:3001/products
+
+###
+// get Single Products
+GET http://localhost:3001/products/3ec33c19-6471-4b03-90b0-254a700c6789
+
+###
+// update Products
+PATCH http://localhost:3001/products/3ec33c19-6471-4b03-90b0-254a700c6789
+Content-Type: application/json
+
+{
+    "name":"Produk 12",
+    "price":324
+}
+
+###
+// delete Products
+DELETE http://localhost:3001/products/1e5fba49-49b7-43d1-9ef6-4d6d3fea5a7d

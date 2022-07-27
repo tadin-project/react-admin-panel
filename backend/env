@@ -1,0 +1,8 @@
+APP_PORT=3001
+SESS_SECRET=agshgdkshgaskmfafjvafbgvafbhaed
+
+DB_HOST=localhost
+DB_USER=root
+DB_PASS=root
+DB_NAME=nodejs
+DB_DIALECT=mysql
